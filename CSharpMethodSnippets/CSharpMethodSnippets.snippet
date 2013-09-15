@@ -1,0 +1,112 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.2.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Insert public instance method.</Title>
+      <Author>@jsakamoto</Author>
+      <Shortcut>method</Shortcut>
+      <!--
+      <HelpUrl></HelpUrl>
+      -->
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>methodname</ID>
+          <ToolTip>method name</ToolTip>
+          <Default>Method1</Default>
+        </Literal>
+        <Literal>
+          <ID>returnType</ID>
+          <ToolTip>type of return value</ToolTip>
+          <Default>void</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[public $returnType$ $methodname$()
+{
+$end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.2.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Insert public static method.</Title>
+      <Author>@jsakamoto</Author>
+      <Shortcut>smethod</Shortcut>
+      <!--
+      <HelpUrl></HelpUrl>
+      -->
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>methodname</ID>
+          <ToolTip>method name</ToolTip>
+          <Default>Method1</Default>
+        </Literal>
+        <Literal>
+          <ID>returnType</ID>
+          <ToolTip>type of return value</ToolTip>
+          <Default>void</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[public static $returnType$ $methodname$()
+{
+$end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.2.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Insert public extention method.</Title>
+      <Author>@jsakamoto</Author>
+      <Shortcut>xmethod</Shortcut>
+      <!--
+      <HelpUrl></HelpUrl>
+      -->
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>methodname</ID>
+          <ToolTip>method name</ToolTip>
+          <Default>Method1</Default>
+        </Literal>
+        <Literal>
+          <ID>returnType</ID>
+          <ToolTip>type of return value</ToolTip>
+          <Default>void</Default>
+        </Literal>
+        <Literal>
+          <ID>argumentType</ID>
+          <ToolTip>type of extention target object</ToolTip>
+          <Default>object</Default>
+        </Literal>
+        <Literal>
+          <ID>argumentName</ID>
+          <ToolTip>argument name of extention target object</ToolTip>
+          <Default>self</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[public static $returnType$ $methodname$(this $argumentType$ $argumentName$)
+{
+$end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+

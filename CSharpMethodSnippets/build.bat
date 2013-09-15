@@ -1,0 +1,3 @@
+zip CSharpMethodSnippets.vsi CSharpMethodSnippets.vscontent
+zip CSharpMethodSnippets.vsi CSharpMethodSnippets.snippet
+
